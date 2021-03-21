@@ -1,0 +1,3 @@
+API_KEY = 'RGAPI-6f6455c9-da3e-43bf-a82e-07756caee670' # expired bro
+REGION = 'EUW1'
+# EUW1, EUN1, NA1, JP1
