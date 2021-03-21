@@ -1,7 +1,7 @@
 # leagueML
 
 ## Data
-All the data gathered during the project is available here : https://drive.google.com/file/d/10JW-11G7nZtAMZpSqUaPNJwqSocORM8j/view?usp=sharing
+All the data gathered during the project is available here : https://drive.google.com/file/d/10JW-11G7nZtAMZpSqUaPNJwqSocORM8j/view?usp=sharing  
 Use `tar -zxvf leagueML.tar.gz` to extract it. 
 ## Objectives
 
