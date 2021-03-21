@@ -48,7 +48,7 @@ Use `tar -zxvf leagueML.tar.gz` to extract it.
 
 ## Data gathering
 
-Each match has an associated ID, which can be used to request the data for the match to the Riot API.  
+Each match has an associated ID, which can be used to request the match data to the Riot API.  
 It turns out that gathering these IDs is really impractical, luckily for me, a user of the developer community surrounding the game uploads a list of 40k matches IDs to his website every week. You can find these [here](canisback.com/matchId). Kudos to [Canisback](https://github.com/Canisback).  
 With these match IDs in hand, I built a pipeline to request the api for the data I needed.  
 The request rate of the Riot API is quite limiting, and I had to gather the rest by scraping leagueofgraph.com for the players' data.  
@@ -99,7 +99,7 @@ Here is a peak at the data coming out of the pipeline.
     }
 ```
 
-The json main fields contains the data for each players, `Player1` to `Player5` correspond to the blue team, and `Player6` to `Player10` to the red team.
+The json main fields contains the data for all players, `Player1` to `Player5` correspond to the blue team, and `Player6` to `Player10` to the red team.
   
 Let's review the different fields.
 
@@ -143,7 +143,7 @@ To resume, we now have two pandas dataframe, one for each team, each row represe
 Here's what it looks like:  
 ![team_presum](img/team_presum.png)
 
-In its current form, the data is unusable, so I startes thinking about the best ways to structure it.  
+In its current form, the data is unusable, so I started thinking about the best ways to structure it.  
 The first thing I tried was to concatenate all the rows for the two teams into one, and drop the useless features. I trained a basic model on this data, and got decent results (73% accuracy), but the data was scarce (hundreds of features), and messy, it didn't feel right.  
 I started to wonder if summing/averaging the features for the 5 players in a team would be beneficial. On paper, there would be some information loss, as the data would no longer hold lane wise information, but I gave it a try.
 
