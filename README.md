@@ -8,7 +8,7 @@ Use `tar -zxvf leagueML.tar.gz` to extract it.
 - Gather the first 15 minutes of data for ~80k League of Legends matches from the Riot API.
 - Scrape players' data from `leagueofgraph.com`.
 - Preprocess and engineer unusually structured data.
-- Model the data the predict the match outcome.
+- Model the data to predict the match outcome.
   
 ## Introduction
 
