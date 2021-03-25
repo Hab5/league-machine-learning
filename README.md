@@ -41,7 +41,7 @@ Use `tar -zxvf leagueML.tar.gz` to extract it.
   >  
   >That's pretty much all the information needed to understand the following sections, however the game and its concepts can be very complex, when played well.
 
-- **Why the first 15 minutes of data for each game ?**  
+- **Why the first 15 minutes of data per match ?**  
   >The first 15 minutes of a game represent what's called the early game, or laning phase.  
   >It is a known fact for the players that this is a very important phase in the game, and that a decisive edge can be gained by playing it well.  
   >Coincidentally, the players are allowed to forfeit the game after the 15th minutes, which added incentive for me to chose this number, as it would theorically be possible to use the model prediction to evaluate wether that is a sound choice.
