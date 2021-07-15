@@ -200,5 +200,3 @@ Sklearn's GradientBoostingClassifier() gave the best results out of the box, but
 # Results
 
 `~81%` accuracy (with KFold Cross Validation)
-
-Not bad at all!
